@@ -1,0 +1,22 @@
+#hero {
+    height: 100vh;
+    background-image: url('https://media.istockphoto.com/id/1168379768/photo/happy-birthday-cupcake-on-glitter-colorful-background.jpg?b=1&s=170667a&w=0&k=20&c=yGbNDuMnqDbYWxgb3eaYj--BmIL5mRVO4LQv802JlBs=');
+    background-size: cover;
+    color: #fff;
+}
+
+.hero-carousel {
+    text-align: center;
+    padding: 7% 15%;
+}
+
+.hero-image {
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+#about {
+    height: 100vh;
+    text-align: center;
+    padding: 3% 15%;
+}
