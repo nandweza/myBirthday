@@ -18,7 +18,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand m-adjust" href="">
-                    <p class="" width="75">Nandweza Allan</p>
+                    <img src="/images/march-removebg-preview.png" class="" width="150">
                 </a>
                 <button class="navbar-toggler b-adjust" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -26,23 +26,23 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 r-adjust">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#hero">Home</a>
+                            <a class="nav-link active hero-link" href="#hero">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"href="#about">About me</a>
+                            <a class="nav-link hero-link"href="#about">About me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#post">Post a Birthday message</a>
+                            <a class="nav-link hero-link" href="#post">Send Birthday wishes</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
-        <div id="carouselExampleIndicators" class="carousel slide hero-carousel" data-bs-ride="true">
+        <div id="hero-carousel" class="carousel slide hero-carousel" data-bs-ride="true">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -58,11 +58,11 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil cum, id nesciunt aliquid dignissimos, reprehenderit eum nam tenetur reiciendis magnam eos minima exercitationem aut mollitia quo ut et maiores fugiat?</p>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
@@ -99,12 +99,9 @@
                     </p>
                 </div>
                 <div class="col">
-                    <img src="https://avatars.githubusercontent.com/u/63627595?s=120&v=4" alt="" width="300" height="300">
+                    <img src="https://avatars.githubusercontent.com/u/63627595?s=120&v=4" alt="" width="300" height="300" class="mt-5">
                     <div class="icons">
-                        <h3 class="icons-heading">
-                            Connect with me
-                        </h3>
-                        <br>
+                        <h3 class="icons-heading mt-4">Connect with me</h3>
                         <i class="fa fa-facebook"></i>
                         <i class="fa fa-twitter"></i>
                         <i class="fa fa-linkedin"></i>
@@ -112,6 +109,17 @@
                         <i class="fa fa-whatsapp"></i>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section id="post">
+        <div class="container">
+            <div class="row form-border-bottom">
+                <form action="" class="post-form">
+                    <label for="content">Write a Birthday message:</label>
+                    <textarea name="" id="" cols="30" rows="1" class="form-control"></textarea>
+                    <button class="btn btn-primary btn-lg mt-2">Post</button>
+                </form>
             </div>
         </div>
     </section>
