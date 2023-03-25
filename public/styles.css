@@ -95,8 +95,14 @@
 }
 
 @media (max-width: 400px) {
+    #hero {
+        height: auto;
+    }
     #post {
         padding: 7% 3%;
+    }
+    .right img {
+        height: auto;
     }
 }
 
