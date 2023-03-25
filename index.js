@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require('mongoose');
 const appRouter = require('./routes/appRouter');
 
-const port = process.env.PORT || 4001;
+const port = process.env.PORT || 4002;
 
 mongoose.set('strictQuery', true);
 mongoose.connect(/*process.env.MONGO_URL*/
