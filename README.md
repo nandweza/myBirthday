@@ -1,4 +1,4 @@
-# MY BIRTHDAY
+# myBirthday
 <img src="/public/images/myBirthday.png" alt="birthday wallpaper" width="100%">
 
 A simple fullstack web application built with nodejs, express and mongoose for backend and
