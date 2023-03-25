@@ -1,8 +1,15 @@
 const express = require('express');
 const app = express();
+const mongoose = require('mongoose');
 const appRouter = require('./routes/appRouter');
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 4001;
+
+mongoose.set('strictQuery', true);
+mongoose.connect(/*process.env.MONGO_URL*/
+                  "mongodb+srv://almah:almah2000@cluster0.xiv1v0u.mongodb.net/?retryWrites=true&w=majority")
+  .then(() => console.log("DB Connected Successfully!"))
+  .catch((err) => console.log(err));
 
 
 //register view engine

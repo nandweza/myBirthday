@@ -7,7 +7,6 @@
 
 .hero-link {
     color: #fff;
-    /* font-size: 1.5rem; */
 }
 
 .hero-carousel {
@@ -23,7 +22,6 @@
 
 .carousel-text {
     font-size: 1.5rem;
-    /* font-weight: bold; */
     color: #000;
 }
 
@@ -43,7 +41,6 @@
 #about {
     height: 100vh;
     text-align: center;
-    /* padding: 3% 15%; */
 }
 
 .left {
@@ -93,7 +90,6 @@
 
 #post {
     background-color: gainsboro;
-    /* height: auto; */
     margin: 0 auto;
     padding: 7% 15%;
 }
@@ -102,4 +98,20 @@
     #post {
         padding: 7% 3%;
     }
+}
+
+.card-text {
+    font-size: 1.2rem;
+}
+
+.date {
+    font-size: .8rem;
+}
+
+.card-body span {
+    float: right;
+}
+
+.no-message {
+    text-align: center;
 }

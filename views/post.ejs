@@ -26,9 +26,6 @@
                     <li class="nav-item">
                         <a class="nav-link hero-link fw-bold text-dark" href="/">Home</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link hero-link fw-bold" href="#about">About me</a>
-                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link hero-link fw-bold text-dark" href="/post">Send Birthday wishes</a>
                     </li>
@@ -39,41 +36,36 @@
     <section id="post">
         <div class="container">
             <div class="row form-border-bottom">
-                <form action="/post" method="post" class="post-form">
+                <form action="/message" method="post" class="post-form">
                     <label for="content">Write Birthday message:</label>
-                    <textarea name="message" id="" cols="30" rows="1" class="form-control"></textarea>
+                    <textarea name="content" id="content" cols="30" rows="1" class="form-control"></textarea>
                     <label for="name">Enter your name:</label>
                     <input type="text" name="name" id="name" class="form-control">
-                    <button class="btn btn-primary btn-lg mt-2">Post</button>
+                    <button class="btn btn-primary btn-lg mt-2" type="submit">Post</button>
                 </form>
             </div>
         </div>
         <div class="container mt-5">
             <div class="row">
+                <% if (messages.length > 0) { %>
+                <% messages.forEach((message) => { %>
                 <div class="col-lg-4 col-md-6">
-                    <div class="card">
+                    <div class="card mb-2">
                         <div class="card-body">
                             <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, vel, aspernatur tempora est esse beatae harum voluptate quod corrupti fugit iusto labore quos ducimus praesentium veniam voluptas doloremque mollitia quisquam.
+                                <%= message.content %>
                             </p>
-                            <span class="card-footer">from Allan</span>
+                            <p class="date text-muted">
+                                <%= message.createdAt.toDateString() %>
+                            </p>
+                            <span class="card-footer">from <%= message.name %></span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-
-                        </div>
-                    </div>
-                </div>
+                <% }) %>
+                <% } else { %>
+                    <div class="no-message">There are no messages to display...</div>
+                <% } %>
             </div>
         </div>
     </section>
@@ -83,7 +75,6 @@
           <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">About me</a></li>
           <li class="nav-item"><a href="https://nandweza.github.io/Allan_Portfolio_Web/" target="_blank" class="nav-link px-2 text-muted">Portfolio</a></li>
           <li class="nav-item"><a href="/post" class="nav-link px-2 text-muted">Send Birthday wish</a></li>
-          <!-- <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"></a></li> -->
         </ul>
         <p class="text-center text-muted">&copy;<script>document.write( new Date().getFullYear() );</script> Happy Birthday, Allan!</p>
     </footer>
