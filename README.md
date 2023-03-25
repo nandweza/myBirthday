@@ -1,5 +1,5 @@
 # MY BIRTHDAY
-<img src="/images/myBirthday.png" alt="birthday wallpaper" width="100%">
+<img src="/public/images/myBirthday.png" alt="birthday wallpaper" width="100%">
 
 A simple fullstack web application built with nodejs, express and mongoose for backend and
 ejs, css and bootstrap for frontend.
@@ -14,8 +14,8 @@ This appliaction was simply built for my birthday so that people can connect and
 + if you want to send me birthday wishes head over to `send birthday wishes` page, write your message and your name then click on `Post` button and your message will be displayed down.
 
 ## More Project images
-<img src="/images/myBirthday2.png" alt="birthday wallpaper" width="100%">
-<img src="/images/myBirthday3.png" alt="birthday wallpaper" width="100%">
+<img src="/public/images/myBirthday2.png" alt="page image 1" width="100%">
+<img src="/public/images/myBirthday3.png" alt="page image 2" width="100%">
 
 ## Project Link on github(codebase)
 https://github.com/nandweza/myBirthday.git
