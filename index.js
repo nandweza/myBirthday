@@ -6,8 +6,7 @@ const appRouter = require('./routes/appRouter');
 const port = process.env.PORT || 4002;
 
 mongoose.set('strictQuery', true);
-mongoose.connect(/*process.env.MONGO_URL*/
-                  "mongodb+srv://almah:almah2000@cluster0.xiv1v0u.mongodb.net/?retryWrites=true&w=majority")
+mongoose.connect(process.env.MONGO_URL)
   .then(() => console.log("DB Connected Successfully!"))
   .catch((err) => console.log(err));
 
