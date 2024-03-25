@@ -121,3 +121,22 @@
 .no-message {
     text-align: center;
 }
+
+.modal-title {
+    /* text-align: center; */
+    margin: 0 auto;
+}
+
+.modal-dialog {
+    color: #000;
+    margin: 0 auto;
+    max-width: 60vw; 
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .modal-body form {
+    width: 800px;
+} */

@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
 
 router.get('/post', async (req, res) => {
     const messages = await Message.find().sort({ createdAt: -1 });
-    res.render('post', { messages: messages });
+    res.render('post', { messages: messages, _id: messages._id });
 });
 
 router.post('/message', (req, res) => {
@@ -31,6 +31,23 @@ router.post('/message', (req, res) => {
         res.redirect('/post');
      })
      .catch(err => console.error(err));
+});
+
+// delete a message
+router.delete('/post/:messageId', async (req, res) => {
+    try {
+        const { messageId } = req.params;
+        const deletedMessage = await Message.findByIdAndDelete(messageId);
+
+        if (!deletedMessage) {
+            return res.status(404).json({ message: 'Message not found' });
+        }
+
+        res.status(200).json({ message: 'Message deleted successfully' });
+    } catch (error) {
+        console.error('Error deleting message:', error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
 });
 
 module.exports = router;

@@ -27,14 +27,14 @@
                         <a class="nav-link hero-link fw-bold text-dark" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link hero-link fw-bold text-dark" href="/post">Send Birthday wishes</a>
+                        <a class="nav-link hero-link fw-bold text-dark" href="/post">Birthday Wishes</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
     <section id="post">
-        <div class="container">
+        <!-- <div class="container">
             <div class="row form-border-bottom">
                 <form action="/message" method="post" class="post-form">
                     <label for="content">Write Birthday message:</label>
@@ -44,7 +44,7 @@
                     <button class="btn btn-primary btn-lg mt-2" type="submit">Post</button>
                 </form>
             </div>
-        </div>
+        </div> -->
         <div class="container mt-5">
             <div class="row">
                 <% if (messages.length > 0) { %>
@@ -72,11 +72,12 @@
     <footer class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Home</a></li>
-          <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">About me</a></li>
-          <li class="nav-item"><a href="https://nandweza.github.io/Allan_Portfolio_Web/" target="_blank" class="nav-link px-2 text-muted">Portfolio</a></li>
-          <li class="nav-item"><a href="/post" class="nav-link px-2 text-muted">Send Birthday wish</a></li>
+          <!-- <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">About me</a></li> -->
+          <li class="nav-item"><a href="/post" class="nav-link px-2 text-muted">Birthday Wishes</a></li>
+          <li class="nav-item"><a href="https://nandweza.github.io/allan/" target="_blank" class="nav-link px-2 text-muted">Portfolio</a></li>
+          <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Post Birthday Wish</a></li>
         </ul>
-        <p class="text-center text-muted">&copy;<script>document.write( new Date().getFullYear() );</script> Happy Birthday, Allan!</p>
+        <p class="text-center text-muted">&copy;2023-<script>document.write( new Date().getFullYear() );</script> Happy Birthday, Allan!</p>
     </footer>
 </body>
 </html>

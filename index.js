@@ -10,7 +10,6 @@ mongoose.connect(process.env.MONGO_URL)
   .then(() => console.log("DB Connected Successfully!"))
   .catch((err) => console.log(err));
 
-
 //register view engine
 app.set('view engine', 'ejs');
 app.set('views', 'views');
